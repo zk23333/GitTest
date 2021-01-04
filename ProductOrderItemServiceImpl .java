@@ -48,14 +48,3 @@ add func2
     public boolean deleteList(Integer[] productOrderItemIdList) {
         return productOrderItemMapper.deleteList(productOrderItemIdList)>0;
     }
-
-add func3
-    @Override
-    public ProductOrderItem get(Integer productOrderItemId) {
-        return productOrderItemMapper.selectOne(productOrderItemId);
-    }
-    @Override
-    public List<ProductOrderItem> getListByOrderId(Integer orderId, PageUtil pageUtil) {
-        return productOrderItemMapper.selectByOrderId(orderId,pageUtil);
-    }
-}
